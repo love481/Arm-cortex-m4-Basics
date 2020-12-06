@@ -1,0 +1,26 @@
+--cpu=Cortex-M4.fp
+"uart2_basics\startup_stm32f407xx.o"
+"uart2_basics\main.o"
+"uart2_basics\stm32f4xx_it.o"
+"uart2_basics\stm32f4xx_hal_msp.o"
+"uart2_basics\stm32f4xx_hal_tim.o"
+"uart2_basics\stm32f4xx_hal_tim_ex.o"
+"uart2_basics\stm32f4xx_hal_uart.o"
+"uart2_basics\stm32f4xx_hal_rcc.o"
+"uart2_basics\stm32f4xx_hal_rcc_ex.o"
+"uart2_basics\stm32f4xx_hal_flash.o"
+"uart2_basics\stm32f4xx_hal_flash_ex.o"
+"uart2_basics\stm32f4xx_hal_flash_ramfunc.o"
+"uart2_basics\stm32f4xx_hal_gpio.o"
+"uart2_basics\stm32f4xx_hal_dma_ex.o"
+"uart2_basics\stm32f4xx_hal_dma.o"
+"uart2_basics\stm32f4xx_hal_pwr.o"
+"uart2_basics\stm32f4xx_hal_pwr_ex.o"
+"uart2_basics\stm32f4xx_hal_cortex.o"
+"uart2_basics\stm32f4xx_hal.o"
+"uart2_basics\stm32f4xx_hal_exti.o"
+"uart2_basics\system_stm32f4xx.o"
+--library_type=microlib --strict --scatter "uart2_basics\uart2_basics.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "uart2_basics.map" -o uart2_basics\uart2_basics.axf

@@ -1,0 +1,25 @@
+--cpu=Cortex-M4.fp
+"interrupt_basics\startup_stm32f407xx.o"
+"interrupt_basics\main.o"
+"interrupt_basics\stm32f4xx_it.o"
+"interrupt_basics\stm32f4xx_hal_msp.o"
+"interrupt_basics\stm32f4xx_hal_tim.o"
+"interrupt_basics\stm32f4xx_hal_tim_ex.o"
+"interrupt_basics\stm32f4xx_hal_rcc.o"
+"interrupt_basics\stm32f4xx_hal_rcc_ex.o"
+"interrupt_basics\stm32f4xx_hal_flash.o"
+"interrupt_basics\stm32f4xx_hal_flash_ex.o"
+"interrupt_basics\stm32f4xx_hal_flash_ramfunc.o"
+"interrupt_basics\stm32f4xx_hal_gpio.o"
+"interrupt_basics\stm32f4xx_hal_dma_ex.o"
+"interrupt_basics\stm32f4xx_hal_dma.o"
+"interrupt_basics\stm32f4xx_hal_pwr.o"
+"interrupt_basics\stm32f4xx_hal_pwr_ex.o"
+"interrupt_basics\stm32f4xx_hal_cortex.o"
+"interrupt_basics\stm32f4xx_hal.o"
+"interrupt_basics\stm32f4xx_hal_exti.o"
+"interrupt_basics\system_stm32f4xx.o"
+--library_type=microlib --strict --scatter "interrupt_basics\interrupt_basics.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "interrupt_basics.map" -o interrupt_basics\interrupt_basics.axf
